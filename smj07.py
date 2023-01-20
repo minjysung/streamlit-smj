@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('$huge:money_with_wings: **_:green[MONEY]_** :money_with_wings:')
+st.title('\Huge:money_with_wings: **_:green[MONEY]_** :money_with_wings:')
 
 
 import streamlit as st
