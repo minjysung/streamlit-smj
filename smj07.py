@@ -1,5 +1,5 @@
-st.title('Money')
-st.title('A title with _italics_ :green[colors] and emojis :money:')
+st.title('MONEY')
+st.title('A title with _italics_ :green[colors] and emojis :dollor:')
 
 
 import streamlit as st
