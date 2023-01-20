@@ -1,3 +1,6 @@
+st.title('This is a title')
+st.title('A title with _italics_ :green[colors] and emojis :sunglasses:')
+
 
 import streamlit as st
 import pandas as pd
