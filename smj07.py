@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title(':green[MONEY]:money_with_wings:')
+st.title(':MONEY[green]:money_with_wings:')
 
 
 import streamlit as st
