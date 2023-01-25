@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 
 money = pd.read_csv("money_data7.csv")
 
+st.sidebar.success("Select a demo above.")
 
 
 option = st.selectbox(
