@@ -15,8 +15,8 @@ import matplotlib.pyplot as plt
 #st.sidebar.success("Select a demo above.")
 
 def  plotting_demo():
-money = pd.read_csv("money_data7.csv")
-option = st.selectbox(
+ money = pd.read_csv("money_data7.csv")
+ option = st.selectbox(
     'How would you like to choice year ?',
     ('2020', '2021', '2022'))
                    
@@ -58,5 +58,5 @@ with st.form(key ='Form1'):
     a = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
         
         
-if select_language =='line':        
+if a =='line':        
     plotting_demo()      
