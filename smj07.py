@@ -10,11 +10,12 @@ import matplotlib.pyplot as plt
 
 #plt.figure(figsize=(12,8))
 
+#money = pd.read_csv("money_data7.csv")
+
+#st.sidebar.success("Select a demo above.")
+
+def  plotting_demo():
 money = pd.read_csv("money_data7.csv")
-
-st.sidebar.success("Select a demo above.")
-
-
 option = st.selectbox(
     'How would you like to choice year ?',
     ('2020', '2021', '2022'))
@@ -50,3 +51,12 @@ plt.title('House Price')
 
 st.pyplot(fig)
 st.dataframe(money) 
+
+with st.form(key ='Form1'):
+    with st.sidebar:
+        
+    a = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
+        
+        
+if select_language =='line':        
+    plotting_demo()      
