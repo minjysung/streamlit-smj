@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+st.title(':money_with_wings: **_:green[MONEY]_** :money_with_wings:')
 #money = pd.read_csv("money_data7.csv")
 
 #st.sidebar.success("Select a demo above.")
