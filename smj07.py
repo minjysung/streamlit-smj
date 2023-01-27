@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 st.title(':money_with_wings: **_:green[MONEY]_** :money_with_wings:')
-money = pd.read_csv("money_data7.csv")
+#money = pd.read_csv("money_data7.csv")
 
 #st.sidebar.success("Select a demo above.")
 
@@ -13,9 +13,9 @@ def  plotting_demo():
     
     uploaded_file = st.file_uploader("Choose a file")
 
-    money2=pd.read_csv(uploaded_file)
+    money=pd.read_csv(uploaded_file)
     
-    money = pd.read_csv("money_data7.csv")
+    #money = pd.read_csv("money_data7.csv")
    
     option = st.selectbox(
         'How would you like to choice year ?',
