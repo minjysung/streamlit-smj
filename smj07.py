@@ -22,20 +22,20 @@ def  plotting_demo():
     money = money[:] [money['A_YEAR']== option2]
 
     fig, ax = plt.subplots(2,2, figsize=(12,8))
-    
+
     plt.subplot(221)
-    plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='salmon' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='red' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('America rate')
 
 
     plt.subplot(222)
-    plt.plot(  list( money['A_MONTH'] ), list( money['K_RATE'] ), color='lightskyblue' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['K_RATE'] ), color='blue' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('Korea rate')
 
     plt.subplot(223)
-    plt.plot(  list( money['A_MONTH'] ), list( money['KOSPI'] ), color='lightpink' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['KOSPI'] ), color='green' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('Kospi Rate')
 
