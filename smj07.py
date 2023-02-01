@@ -88,9 +88,15 @@ def bar_chart():
     colors = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7' ,'C8', 'C9', 'C10' ]
     plt.bar(  x,  y,  color= colors , alpha = 0.5, width =0.5) 
 
-    for   num ,   v    in   enumerate( y ):
-        plt.text (  num -0.4  ,   v + 0.01 ,  v   )
-
+    #for   num ,   v    in   enumerate( y ):
+        #plt.text (  num -0.4  ,   v + 0.01 ,  v   )
+for rect in bar:
+    height = rect.get_height()
+    plt.text(rect.get_x() + rect.get_width()/2.0, height, '%.1f' % height, ha='center', va='bottom', size = 12)
+        
+        
+        
+        
     plt.title( "year korea baseball winrate data", position=(0.5,1.1))
     st.pyplot(fig)
     st.dataframe(df7)
