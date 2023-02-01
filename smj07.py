@@ -89,7 +89,7 @@ def bar_chart():
     plt.bar(  x,  y,  color= colors , alpha = 0.5, width =0.5) 
 
     for   num ,   v    in   enumerate( y ):
-        plt.text (  num ='center'  ,   v + 0.01 ,  v   )
+        plt.text (  num -0.29  ,   v + 0.01 ,  v   )
 
 
     
