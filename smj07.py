@@ -30,7 +30,7 @@ def  plotting_demo():
     fig, ax = plt.subplots(2,2, figsize=(12,8))
 
     plt.subplot(221)
-    plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='yellow' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='green' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('America rate')
 
@@ -86,7 +86,7 @@ def bar_chart():
     fig, ax = plt.subplots(figsize=(12,8))
 
     colors = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7' ,'C8', 'C9', 'C10' ]
-    plt.bar(  x,  y,  color= colors ) 
+    plt.bar(  x,  y,  color= colors , alpha = 0.5) 
 
     for   num ,   v    in   enumerate( y ):
         plt.text (  num -0.4  ,   v + 0.01 ,  v   )
@@ -100,15 +100,15 @@ def bar_chart():
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
+        select_language = st.sidebar.radio('데이터 분석 결과', ('금리와 집값 빠르게 파악하기', '야구 순위와 승률 빠르게 파악하기', '다른 데이터 분석'))
         
         
-if select_language =='line':           
+if select_language =='금리와 집값 빠르게 파악하기':           
     try:
           plotting_demo()  
     except:      
           pass
 
         
-elif select_language =='bar':
+elif select_language =='야구 순위와 승률 빠르게 파악하기':
     bar_chart()
